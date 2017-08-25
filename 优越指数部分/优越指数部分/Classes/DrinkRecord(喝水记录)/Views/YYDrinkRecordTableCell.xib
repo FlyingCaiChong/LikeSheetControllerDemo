@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="YYDrinkRecordTableCell" rowHeight="55" id="KGk-i7-Jjw" customClass="YYDrinkRecordTableCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="54.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="heshui_jilu_putongbeixing" translatesAutoresizingMaskIntoConstraints="NO" id="Uek-0U-79e">
+                        <rect key="frame" x="23" y="14" width="20" height="25"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上午 10:20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mDU-be-0uo">
+                        <rect key="frame" x="63" y="20" width="128.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="记录 1000mL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iyN-g6-gY2">
+                        <rect key="frame" x="191.5" y="21" width="128.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="iyN-g6-gY2" firstAttribute="leading" secondItem="mDU-be-0uo" secondAttribute="trailing" id="A6V-69-lMs"/>
+                    <constraint firstItem="iyN-g6-gY2" firstAttribute="width" secondItem="mDU-be-0uo" secondAttribute="width" id="DXS-Di-q9D"/>
+                    <constraint firstItem="mDU-be-0uo" firstAttribute="leading" secondItem="Uek-0U-79e" secondAttribute="trailing" constant="20" id="Ss4-TT-Yni"/>
+                    <constraint firstItem="iyN-g6-gY2" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="aZL-1R-gXr"/>
+                    <constraint firstItem="Uek-0U-79e" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="eQa-bW-E92"/>
+                    <constraint firstAttribute="trailing" secondItem="iyN-g6-gY2" secondAttribute="trailing" id="hXP-ZE-5uc"/>
+                    <constraint firstItem="mDU-be-0uo" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="qJJ-wd-W1Z"/>
+                    <constraint firstItem="Uek-0U-79e" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="23" id="vjq-FG-RKc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="capacityLabel" destination="iyN-g6-gY2" id="5mg-B4-mck"/>
+                <outlet property="cupImageView" destination="Uek-0U-79e" id="1PU-NI-KYd"/>
+                <outlet property="timeLabel" destination="mDU-be-0uo" id="BEc-2S-p1Z"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="53.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="heshui_jilu_putongbeixing" width="20" height="25"/>
+    </resources>
+</document>

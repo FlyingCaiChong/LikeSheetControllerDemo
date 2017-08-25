@@ -1,0 +1,810 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		395C5A911F4A8E3600A647F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 395C5A901F4A8E3600A647F8 /* main.m */; };
+		395C5A941F4A8E3600A647F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 395C5A931F4A8E3600A647F8 /* AppDelegate.m */; };
+		395C5A971F4A8E3600A647F8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 395C5A961F4A8E3600A647F8 /* ViewController.m */; };
+		395C5A9A1F4A8E3700A647F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 395C5A981F4A8E3700A647F8 /* Main.storyboard */; };
+		395C5A9C1F4A8E3700A647F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 395C5A9B1F4A8E3700A647F8 /* Assets.xcassets */; };
+		395C5A9F1F4A8E3700A647F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 395C5A9D1F4A8E3700A647F8 /* LaunchScreen.storyboard */; };
+		395C5AAA1F4A8E3700A647F8 /* ______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 395C5AA91F4A8E3700A647F8 /* ______Tests.m */; };
+		395C5AB51F4A8E3700A647F8 /* ______UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 395C5AB41F4A8E3700A647F8 /* ______UITests.m */; };
+		395C5ACE1F4A8FBF00A647F8 /* YYDrinkRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 395C5ACC1F4A8FBF00A647F8 /* YYDrinkRecordViewController.m */; };
+		395C5ACF1F4A8FBF00A647F8 /* YYDrinkRecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 395C5ACD1F4A8FBF00A647F8 /* YYDrinkRecordViewController.xib */; };
+		395D1AE31F4BC25200DD110D /* YYDrinkCupItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 395D1AE21F4BC25200DD110D /* YYDrinkCupItem.m */; };
+		3973E8681F4E5F69006EB892 /* YYDrinkEditCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3973E8661F4E5F69006EB892 /* YYDrinkEditCell.m */; };
+		3973E8691F4E5F69006EB892 /* YYDrinkEditCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3973E8671F4E5F69006EB892 /* YYDrinkEditCell.xib */; };
+		3973E86C1F4E73DB006EB892 /* YYSleepHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3973E86B1F4E73DB006EB892 /* YYSleepHistoryViewController.m */; };
+		3973E8701F4E749A006EB892 /* YYSleepHistoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3973E86E1F4E749A006EB892 /* YYSleepHistoryCell.m */; };
+		3973E8711F4E749A006EB892 /* YYSleepHistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3973E86F1F4E749A006EB892 /* YYSleepHistoryCell.xib */; };
+		3973E8781F4E7907006EB892 /* YYSleepSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3973E8761F4E7907006EB892 /* YYSleepSettingViewController.m */; };
+		3973E8791F4E7907006EB892 /* YYSleepSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3973E8771F4E7907006EB892 /* YYSleepSettingViewController.xib */; };
+		3973E87D1F4EA3DC006EB892 /* YYSleepTimeSelectSheetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3973E87B1F4EA3DC006EB892 /* YYSleepTimeSelectSheetController.m */; };
+		3973E87E1F4EA3DC006EB892 /* YYSleepTimeSelectSheetController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3973E87C1F4EA3DC006EB892 /* YYSleepTimeSelectSheetController.xib */; };
+		3973E8811F4EB26B006EB892 /* YYSleepTimeTransitionDelegateObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 3973E8801F4EB26B006EB892 /* YYSleepTimeTransitionDelegateObj.m */; };
+		3973E8841F4EB2E1006EB892 /* YYSleepViewControllerTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3973E8831F4EB2E1006EB892 /* YYSleepViewControllerTransitionAnimation.m */; };
+		398F421B1F4FB1520028668A /* YYMoodRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 398F421A1F4FB1520028668A /* YYMoodRecordViewController.m */; };
+		398F421F1F4FB1950028668A /* YYMoodRecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 398F421D1F4FB1950028668A /* YYMoodRecordCell.m */; };
+		398F42201F4FB1950028668A /* YYMoodRecordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 398F421E1F4FB1950028668A /* YYMoodRecordCell.xib */; };
+		398F42241F4FB3580028668A /* YYMoodAddCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 398F42221F4FB3580028668A /* YYMoodAddCell.m */; };
+		398F42251F4FB3580028668A /* YYMoodAddCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 398F42231F4FB3580028668A /* YYMoodAddCell.xib */; };
+		398F42291F4FBC670028668A /* YYMoodSelectPopController.m in Sources */ = {isa = PBXBuildFile; fileRef = 398F42271F4FBC670028668A /* YYMoodSelectPopController.m */; };
+		398F422A1F4FBC670028668A /* YYMoodSelectPopController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 398F42281F4FBC670028668A /* YYMoodSelectPopController.xib */; };
+		398F422E1F4FC4200028668A /* YYMoodSelectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 398F422C1F4FC4200028668A /* YYMoodSelectCell.m */; };
+		398F422F1F4FC4200028668A /* YYMoodSelectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 398F422D1F4FC4200028668A /* YYMoodSelectCell.xib */; };
+		398F42321F4FC9090028668A /* YYMoodModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 398F42311F4FC9090028668A /* YYMoodModel.m */; };
+		398F42351F4FF6800028668A /* YYSleepModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 398F42341F4FF6800028668A /* YYSleepModel.m */; };
+		398F423A1F5002A80028668A /* YYDrinkCupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 398F42381F5002A80028668A /* YYDrinkCupCell.m */; };
+		398F423B1F5002A80028668A /* YYDrinkCupCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 398F42391F5002A80028668A /* YYDrinkCupCell.xib */; };
+		39953DE41F4AC01100950249 /* YYDrinkRecordTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 39953DE21F4AC01100950249 /* YYDrinkRecordTableCell.m */; };
+		39953DE51F4AC01100950249 /* YYDrinkRecordTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39953DE31F4AC01100950249 /* YYDrinkRecordTableCell.xib */; };
+		39953DE81F4ACD0F00950249 /* YYDrinkEditPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39953DE71F4ACD0F00950249 /* YYDrinkEditPopView.m */; };
+		39953DEA1F4ACDB800950249 /* YYDrinkEditPopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39953DE91F4ACDB800950249 /* YYDrinkEditPopView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		395C5AA61F4A8E3700A647F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 395C5A841F4A8E3600A647F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 395C5A8B1F4A8E3600A647F8;
+			remoteInfo = "优越指数部分";
+		};
+		395C5AB11F4A8E3700A647F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 395C5A841F4A8E3600A647F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 395C5A8B1F4A8E3600A647F8;
+			remoteInfo = "优越指数部分";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		395C5A8C1F4A8E3600A647F8 /* 优越指数部分.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "优越指数部分.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		395C5A901F4A8E3600A647F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		395C5A921F4A8E3600A647F8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		395C5A931F4A8E3600A647F8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		395C5A951F4A8E3600A647F8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		395C5A961F4A8E3600A647F8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		395C5A991F4A8E3700A647F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		395C5A9B1F4A8E3700A647F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		395C5A9E1F4A8E3700A647F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		395C5AA01F4A8E3700A647F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		395C5AA51F4A8E3700A647F8 /* 优越指数部分Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "优越指数部分Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		395C5AA91F4A8E3700A647F8 /* ______Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "______Tests.m"; sourceTree = "<group>"; };
+		395C5AAB1F4A8E3700A647F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		395C5AB01F4A8E3700A647F8 /* 优越指数部分UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "优越指数部分UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		395C5AB41F4A8E3700A647F8 /* ______UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "______UITests.m"; sourceTree = "<group>"; };
+		395C5AB61F4A8E3700A647F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		395C5ACB1F4A8FBF00A647F8 /* YYDrinkRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYDrinkRecordViewController.h; sourceTree = "<group>"; };
+		395C5ACC1F4A8FBF00A647F8 /* YYDrinkRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYDrinkRecordViewController.m; sourceTree = "<group>"; };
+		395C5ACD1F4A8FBF00A647F8 /* YYDrinkRecordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YYDrinkRecordViewController.xib; sourceTree = "<group>"; };
+		395D1AE11F4BC25200DD110D /* YYDrinkCupItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYDrinkCupItem.h; sourceTree = "<group>"; };
+		395D1AE21F4BC25200DD110D /* YYDrinkCupItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYDrinkCupItem.m; sourceTree = "<group>"; };
+		3973E8651F4E5F69006EB892 /* YYDrinkEditCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYDrinkEditCell.h; sourceTree = "<group>"; };
+		3973E8661F4E5F69006EB892 /* YYDrinkEditCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYDrinkEditCell.m; sourceTree = "<group>"; };
+		3973E8671F4E5F69006EB892 /* YYDrinkEditCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YYDrinkEditCell.xib; sourceTree = "<group>"; };
+		3973E86A1F4E73DB006EB892 /* YYSleepHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYSleepHistoryViewController.h; sourceTree = "<group>"; };
+		3973E86B1F4E73DB006EB892 /* YYSleepHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYSleepHistoryViewController.m; sourceTree = "<group>"; };
+		3973E86D1F4E749A006EB892 /* YYSleepHistoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYSleepHistoryCell.h; sourceTree = "<group>"; };
+		3973E86E1F4E749A006EB892 /* YYSleepHistoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYSleepHistoryCell.m; sourceTree = "<group>"; };
+		3973E86F1F4E749A006EB892 /* YYSleepHistoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YYSleepHistoryCell.xib; sourceTree = "<group>"; };
+		3973E8751F4E7907006EB892 /* YYSleepSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYSleepSettingViewController.h; sourceTree = "<group>"; };
+		3973E8761F4E7907006EB892 /* YYSleepSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYSleepSettingViewController.m; sourceTree = "<group>"; };
+		3973E8771F4E7907006EB892 /* YYSleepSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YYSleepSettingViewController.xib; sourceTree = "<group>"; };
+		3973E87A1F4EA3DC006EB892 /* YYSleepTimeSelectSheetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYSleepTimeSelectSheetController.h; sourceTree = "<group>"; };
+		3973E87B1F4EA3DC006EB892 /* YYSleepTimeSelectSheetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYSleepTimeSelectSheetController.m; sourceTree = "<group>"; };
+		3973E87C1F4EA3DC006EB892 /* YYSleepTimeSelectSheetController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YYSleepTimeSelectSheetController.xib; sourceTree = "<group>"; };
+		3973E87F1F4EB26B006EB892 /* YYSleepTimeTransitionDelegateObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYSleepTimeTransitionDelegateObj.h; sourceTree = "<group>"; };
+		3973E8801F4EB26B006EB892 /* YYSleepTimeTransitionDelegateObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYSleepTimeTransitionDelegateObj.m; sourceTree = "<group>"; };
+		3973E8821F4EB2E1006EB892 /* YYSleepViewControllerTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYSleepViewControllerTransitionAnimation.h; sourceTree = "<group>"; };
+		3973E8831F4EB2E1006EB892 /* YYSleepViewControllerTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYSleepViewControllerTransitionAnimation.m; sourceTree = "<group>"; };
+		398F42191F4FB1520028668A /* YYMoodRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYMoodRecordViewController.h; sourceTree = "<group>"; };
+		398F421A1F4FB1520028668A /* YYMoodRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYMoodRecordViewController.m; sourceTree = "<group>"; };
+		398F421C1F4FB1950028668A /* YYMoodRecordCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYMoodRecordCell.h; sourceTree = "<group>"; };
+		398F421D1F4FB1950028668A /* YYMoodRecordCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYMoodRecordCell.m; sourceTree = "<group>"; };
+		398F421E1F4FB1950028668A /* YYMoodRecordCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YYMoodRecordCell.xib; sourceTree = "<group>"; };
+		398F42211F4FB3580028668A /* YYMoodAddCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYMoodAddCell.h; sourceTree = "<group>"; };
+		398F42221F4FB3580028668A /* YYMoodAddCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYMoodAddCell.m; sourceTree = "<group>"; };
+		398F42231F4FB3580028668A /* YYMoodAddCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YYMoodAddCell.xib; sourceTree = "<group>"; };
+		398F42261F4FBC670028668A /* YYMoodSelectPopController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYMoodSelectPopController.h; sourceTree = "<group>"; };
+		398F42271F4FBC670028668A /* YYMoodSelectPopController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYMoodSelectPopController.m; sourceTree = "<group>"; };
+		398F42281F4FBC670028668A /* YYMoodSelectPopController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YYMoodSelectPopController.xib; sourceTree = "<group>"; };
+		398F422B1F4FC4200028668A /* YYMoodSelectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYMoodSelectCell.h; sourceTree = "<group>"; };
+		398F422C1F4FC4200028668A /* YYMoodSelectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYMoodSelectCell.m; sourceTree = "<group>"; };
+		398F422D1F4FC4200028668A /* YYMoodSelectCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YYMoodSelectCell.xib; sourceTree = "<group>"; };
+		398F42301F4FC9090028668A /* YYMoodModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYMoodModel.h; sourceTree = "<group>"; };
+		398F42311F4FC9090028668A /* YYMoodModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYMoodModel.m; sourceTree = "<group>"; };
+		398F42331F4FF6800028668A /* YYSleepModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYSleepModel.h; sourceTree = "<group>"; };
+		398F42341F4FF6800028668A /* YYSleepModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYSleepModel.m; sourceTree = "<group>"; };
+		398F42371F5002A80028668A /* YYDrinkCupCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYDrinkCupCell.h; sourceTree = "<group>"; };
+		398F42381F5002A80028668A /* YYDrinkCupCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYDrinkCupCell.m; sourceTree = "<group>"; };
+		398F42391F5002A80028668A /* YYDrinkCupCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YYDrinkCupCell.xib; sourceTree = "<group>"; };
+		39953DE11F4AC01100950249 /* YYDrinkRecordTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYDrinkRecordTableCell.h; sourceTree = "<group>"; };
+		39953DE21F4AC01100950249 /* YYDrinkRecordTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYDrinkRecordTableCell.m; sourceTree = "<group>"; };
+		39953DE31F4AC01100950249 /* YYDrinkRecordTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YYDrinkRecordTableCell.xib; sourceTree = "<group>"; };
+		39953DE61F4ACD0F00950249 /* YYDrinkEditPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYDrinkEditPopView.h; sourceTree = "<group>"; };
+		39953DE71F4ACD0F00950249 /* YYDrinkEditPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYDrinkEditPopView.m; sourceTree = "<group>"; };
+		39953DE91F4ACDB800950249 /* YYDrinkEditPopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YYDrinkEditPopView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		395C5A891F4A8E3600A647F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		395C5AA21F4A8E3700A647F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		395C5AAD1F4A8E3700A647F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		395C5A831F4A8E3600A647F8 = {
+			isa = PBXGroup;
+			children = (
+				395C5A8E1F4A8E3600A647F8 /* 优越指数部分 */,
+				395C5AA81F4A8E3700A647F8 /* 优越指数部分Tests */,
+				395C5AB31F4A8E3700A647F8 /* 优越指数部分UITests */,
+				395C5A8D1F4A8E3600A647F8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		395C5A8D1F4A8E3600A647F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				395C5A8C1F4A8E3600A647F8 /* 优越指数部分.app */,
+				395C5AA51F4A8E3700A647F8 /* 优越指数部分Tests.xctest */,
+				395C5AB01F4A8E3700A647F8 /* 优越指数部分UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		395C5A8E1F4A8E3600A647F8 /* 优越指数部分 */ = {
+			isa = PBXGroup;
+			children = (
+				395C5AC21F4A8EF900A647F8 /* Classes */,
+				395C5A921F4A8E3600A647F8 /* AppDelegate.h */,
+				395C5A931F4A8E3600A647F8 /* AppDelegate.m */,
+				395C5A951F4A8E3600A647F8 /* ViewController.h */,
+				395C5A961F4A8E3600A647F8 /* ViewController.m */,
+				395C5A981F4A8E3700A647F8 /* Main.storyboard */,
+				395C5A9B1F4A8E3700A647F8 /* Assets.xcassets */,
+				395C5A9D1F4A8E3700A647F8 /* LaunchScreen.storyboard */,
+				395C5AA01F4A8E3700A647F8 /* Info.plist */,
+				395C5A8F1F4A8E3600A647F8 /* Supporting Files */,
+			);
+			path = "优越指数部分";
+			sourceTree = "<group>";
+		};
+		395C5A8F1F4A8E3600A647F8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				395C5A901F4A8E3600A647F8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		395C5AA81F4A8E3700A647F8 /* 优越指数部分Tests */ = {
+			isa = PBXGroup;
+			children = (
+				395C5AA91F4A8E3700A647F8 /* ______Tests.m */,
+				395C5AAB1F4A8E3700A647F8 /* Info.plist */,
+			);
+			path = "优越指数部分Tests";
+			sourceTree = "<group>";
+		};
+		395C5AB31F4A8E3700A647F8 /* 优越指数部分UITests */ = {
+			isa = PBXGroup;
+			children = (
+				395C5AB41F4A8E3700A647F8 /* ______UITests.m */,
+				395C5AB61F4A8E3700A647F8 /* Info.plist */,
+			);
+			path = "优越指数部分UITests";
+			sourceTree = "<group>";
+		};
+		395C5AC21F4A8EF900A647F8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				398F42151F4FB07E0028668A /* Mood(心情) */,
+				395C5AC31F4A8EF900A647F8 /* DrinkRecord(喝水记录) */,
+				395C5AC71F4A8EF900A647F8 /* Sleep(睡眠) */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		395C5AC31F4A8EF900A647F8 /* DrinkRecord(喝水记录) */ = {
+			isa = PBXGroup;
+			children = (
+				395C5AC41F4A8EF900A647F8 /* Controller */,
+				395C5AC51F4A8EF900A647F8 /* Model */,
+				395C5AC61F4A8EF900A647F8 /* Views */,
+			);
+			path = "DrinkRecord(喝水记录)";
+			sourceTree = "<group>";
+		};
+		395C5AC41F4A8EF900A647F8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				395C5ACB1F4A8FBF00A647F8 /* YYDrinkRecordViewController.h */,
+				395C5ACC1F4A8FBF00A647F8 /* YYDrinkRecordViewController.m */,
+				395C5ACD1F4A8FBF00A647F8 /* YYDrinkRecordViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		395C5AC51F4A8EF900A647F8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				395D1AE11F4BC25200DD110D /* YYDrinkCupItem.h */,
+				395D1AE21F4BC25200DD110D /* YYDrinkCupItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		395C5AC61F4A8EF900A647F8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				39953DE11F4AC01100950249 /* YYDrinkRecordTableCell.h */,
+				39953DE21F4AC01100950249 /* YYDrinkRecordTableCell.m */,
+				39953DE31F4AC01100950249 /* YYDrinkRecordTableCell.xib */,
+				39953DE61F4ACD0F00950249 /* YYDrinkEditPopView.h */,
+				39953DE71F4ACD0F00950249 /* YYDrinkEditPopView.m */,
+				39953DE91F4ACDB800950249 /* YYDrinkEditPopView.xib */,
+				3973E8651F4E5F69006EB892 /* YYDrinkEditCell.h */,
+				3973E8661F4E5F69006EB892 /* YYDrinkEditCell.m */,
+				3973E8671F4E5F69006EB892 /* YYDrinkEditCell.xib */,
+				398F42371F5002A80028668A /* YYDrinkCupCell.h */,
+				398F42381F5002A80028668A /* YYDrinkCupCell.m */,
+				398F42391F5002A80028668A /* YYDrinkCupCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		395C5AC71F4A8EF900A647F8 /* Sleep(睡眠) */ = {
+			isa = PBXGroup;
+			children = (
+				395C5AC81F4A8EF900A647F8 /* Controller */,
+				395C5AC91F4A8EF900A647F8 /* Model */,
+				395C5ACA1F4A8EF900A647F8 /* Views */,
+			);
+			path = "Sleep(睡眠)";
+			sourceTree = "<group>";
+		};
+		395C5AC81F4A8EF900A647F8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3973E86A1F4E73DB006EB892 /* YYSleepHistoryViewController.h */,
+				3973E86B1F4E73DB006EB892 /* YYSleepHistoryViewController.m */,
+				3973E8751F4E7907006EB892 /* YYSleepSettingViewController.h */,
+				3973E8761F4E7907006EB892 /* YYSleepSettingViewController.m */,
+				3973E8771F4E7907006EB892 /* YYSleepSettingViewController.xib */,
+				3973E87A1F4EA3DC006EB892 /* YYSleepTimeSelectSheetController.h */,
+				3973E87B1F4EA3DC006EB892 /* YYSleepTimeSelectSheetController.m */,
+				3973E87C1F4EA3DC006EB892 /* YYSleepTimeSelectSheetController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		395C5AC91F4A8EF900A647F8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3973E87F1F4EB26B006EB892 /* YYSleepTimeTransitionDelegateObj.h */,
+				3973E8801F4EB26B006EB892 /* YYSleepTimeTransitionDelegateObj.m */,
+				3973E8821F4EB2E1006EB892 /* YYSleepViewControllerTransitionAnimation.h */,
+				3973E8831F4EB2E1006EB892 /* YYSleepViewControllerTransitionAnimation.m */,
+				398F42331F4FF6800028668A /* YYSleepModel.h */,
+				398F42341F4FF6800028668A /* YYSleepModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		395C5ACA1F4A8EF900A647F8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3973E86D1F4E749A006EB892 /* YYSleepHistoryCell.h */,
+				3973E86E1F4E749A006EB892 /* YYSleepHistoryCell.m */,
+				3973E86F1F4E749A006EB892 /* YYSleepHistoryCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		398F42151F4FB07E0028668A /* Mood(心情) */ = {
+			isa = PBXGroup;
+			children = (
+				398F42161F4FB07E0028668A /* Controller */,
+				398F42171F4FB07E0028668A /* Model */,
+				398F42181F4FB07E0028668A /* View */,
+			);
+			path = "Mood(心情)";
+			sourceTree = "<group>";
+		};
+		398F42161F4FB07E0028668A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				398F42191F4FB1520028668A /* YYMoodRecordViewController.h */,
+				398F421A1F4FB1520028668A /* YYMoodRecordViewController.m */,
+				398F42261F4FBC670028668A /* YYMoodSelectPopController.h */,
+				398F42271F4FBC670028668A /* YYMoodSelectPopController.m */,
+				398F42281F4FBC670028668A /* YYMoodSelectPopController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		398F42171F4FB07E0028668A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				398F42301F4FC9090028668A /* YYMoodModel.h */,
+				398F42311F4FC9090028668A /* YYMoodModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		398F42181F4FB07E0028668A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				398F421C1F4FB1950028668A /* YYMoodRecordCell.h */,
+				398F421D1F4FB1950028668A /* YYMoodRecordCell.m */,
+				398F421E1F4FB1950028668A /* YYMoodRecordCell.xib */,
+				398F42211F4FB3580028668A /* YYMoodAddCell.h */,
+				398F42221F4FB3580028668A /* YYMoodAddCell.m */,
+				398F42231F4FB3580028668A /* YYMoodAddCell.xib */,
+				398F422B1F4FC4200028668A /* YYMoodSelectCell.h */,
+				398F422C1F4FC4200028668A /* YYMoodSelectCell.m */,
+				398F422D1F4FC4200028668A /* YYMoodSelectCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		395C5A8B1F4A8E3600A647F8 /* 优越指数部分 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 395C5AB91F4A8E3700A647F8 /* Build configuration list for PBXNativeTarget "优越指数部分" */;
+			buildPhases = (
+				395C5A881F4A8E3600A647F8 /* Sources */,
+				395C5A891F4A8E3600A647F8 /* Frameworks */,
+				395C5A8A1F4A8E3600A647F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "优越指数部分";
+			productName = "优越指数部分";
+			productReference = 395C5A8C1F4A8E3600A647F8 /* 优越指数部分.app */;
+			productType = "com.apple.product-type.application";
+		};
+		395C5AA41F4A8E3700A647F8 /* 优越指数部分Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 395C5ABC1F4A8E3700A647F8 /* Build configuration list for PBXNativeTarget "优越指数部分Tests" */;
+			buildPhases = (
+				395C5AA11F4A8E3700A647F8 /* Sources */,
+				395C5AA21F4A8E3700A647F8 /* Frameworks */,
+				395C5AA31F4A8E3700A647F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				395C5AA71F4A8E3700A647F8 /* PBXTargetDependency */,
+			);
+			name = "优越指数部分Tests";
+			productName = "优越指数部分Tests";
+			productReference = 395C5AA51F4A8E3700A647F8 /* 优越指数部分Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		395C5AAF1F4A8E3700A647F8 /* 优越指数部分UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 395C5ABF1F4A8E3700A647F8 /* Build configuration list for PBXNativeTarget "优越指数部分UITests" */;
+			buildPhases = (
+				395C5AAC1F4A8E3700A647F8 /* Sources */,
+				395C5AAD1F4A8E3700A647F8 /* Frameworks */,
+				395C5AAE1F4A8E3700A647F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				395C5AB21F4A8E3700A647F8 /* PBXTargetDependency */,
+			);
+			name = "优越指数部分UITests";
+			productName = "优越指数部分UITests";
+			productReference = 395C5AB01F4A8E3700A647F8 /* 优越指数部分UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		395C5A841F4A8E3600A647F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = fangheng;
+				TargetAttributes = {
+					395C5A8B1F4A8E3600A647F8 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = LUYMC6AG7V;
+						ProvisioningStyle = Automatic;
+					};
+					395C5AA41F4A8E3700A647F8 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = LUYMC6AG7V;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 395C5A8B1F4A8E3600A647F8;
+					};
+					395C5AAF1F4A8E3700A647F8 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = LUYMC6AG7V;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 395C5A8B1F4A8E3600A647F8;
+					};
+				};
+			};
+			buildConfigurationList = 395C5A871F4A8E3600A647F8 /* Build configuration list for PBXProject "优越指数部分" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 395C5A831F4A8E3600A647F8;
+			productRefGroup = 395C5A8D1F4A8E3600A647F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				395C5A8B1F4A8E3600A647F8 /* 优越指数部分 */,
+				395C5AA41F4A8E3700A647F8 /* 优越指数部分Tests */,
+				395C5AAF1F4A8E3700A647F8 /* 优越指数部分UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		395C5A8A1F4A8E3600A647F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				395C5ACF1F4A8FBF00A647F8 /* YYDrinkRecordViewController.xib in Resources */,
+				3973E8691F4E5F69006EB892 /* YYDrinkEditCell.xib in Resources */,
+				39953DE51F4AC01100950249 /* YYDrinkRecordTableCell.xib in Resources */,
+				395C5A9F1F4A8E3700A647F8 /* LaunchScreen.storyboard in Resources */,
+				398F423B1F5002A80028668A /* YYDrinkCupCell.xib in Resources */,
+				398F42251F4FB3580028668A /* YYMoodAddCell.xib in Resources */,
+				3973E87E1F4EA3DC006EB892 /* YYSleepTimeSelectSheetController.xib in Resources */,
+				398F42201F4FB1950028668A /* YYMoodRecordCell.xib in Resources */,
+				3973E8711F4E749A006EB892 /* YYSleepHistoryCell.xib in Resources */,
+				398F422F1F4FC4200028668A /* YYMoodSelectCell.xib in Resources */,
+				398F422A1F4FBC670028668A /* YYMoodSelectPopController.xib in Resources */,
+				395C5A9C1F4A8E3700A647F8 /* Assets.xcassets in Resources */,
+				395C5A9A1F4A8E3700A647F8 /* Main.storyboard in Resources */,
+				39953DEA1F4ACDB800950249 /* YYDrinkEditPopView.xib in Resources */,
+				3973E8791F4E7907006EB892 /* YYSleepSettingViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		395C5AA31F4A8E3700A647F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		395C5AAE1F4A8E3700A647F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		395C5A881F4A8E3600A647F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				398F42291F4FBC670028668A /* YYMoodSelectPopController.m in Sources */,
+				3973E8701F4E749A006EB892 /* YYSleepHistoryCell.m in Sources */,
+				398F42321F4FC9090028668A /* YYMoodModel.m in Sources */,
+				3973E86C1F4E73DB006EB892 /* YYSleepHistoryViewController.m in Sources */,
+				398F422E1F4FC4200028668A /* YYMoodSelectCell.m in Sources */,
+				398F423A1F5002A80028668A /* YYDrinkCupCell.m in Sources */,
+				395C5ACE1F4A8FBF00A647F8 /* YYDrinkRecordViewController.m in Sources */,
+				395D1AE31F4BC25200DD110D /* YYDrinkCupItem.m in Sources */,
+				395C5A971F4A8E3600A647F8 /* ViewController.m in Sources */,
+				3973E8811F4EB26B006EB892 /* YYSleepTimeTransitionDelegateObj.m in Sources */,
+				395C5A941F4A8E3600A647F8 /* AppDelegate.m in Sources */,
+				3973E8781F4E7907006EB892 /* YYSleepSettingViewController.m in Sources */,
+				398F421B1F4FB1520028668A /* YYMoodRecordViewController.m in Sources */,
+				3973E8841F4EB2E1006EB892 /* YYSleepViewControllerTransitionAnimation.m in Sources */,
+				3973E8681F4E5F69006EB892 /* YYDrinkEditCell.m in Sources */,
+				3973E87D1F4EA3DC006EB892 /* YYSleepTimeSelectSheetController.m in Sources */,
+				395C5A911F4A8E3600A647F8 /* main.m in Sources */,
+				398F421F1F4FB1950028668A /* YYMoodRecordCell.m in Sources */,
+				398F42241F4FB3580028668A /* YYMoodAddCell.m in Sources */,
+				39953DE41F4AC01100950249 /* YYDrinkRecordTableCell.m in Sources */,
+				398F42351F4FF6800028668A /* YYSleepModel.m in Sources */,
+				39953DE81F4ACD0F00950249 /* YYDrinkEditPopView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		395C5AA11F4A8E3700A647F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				395C5AAA1F4A8E3700A647F8 /* ______Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		395C5AAC1F4A8E3700A647F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				395C5AB51F4A8E3700A647F8 /* ______UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		395C5AA71F4A8E3700A647F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 395C5A8B1F4A8E3600A647F8 /* 优越指数部分 */;
+			targetProxy = 395C5AA61F4A8E3700A647F8 /* PBXContainerItemProxy */;
+		};
+		395C5AB21F4A8E3700A647F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 395C5A8B1F4A8E3600A647F8 /* 优越指数部分 */;
+			targetProxy = 395C5AB11F4A8E3700A647F8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		395C5A981F4A8E3700A647F8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				395C5A991F4A8E3700A647F8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		395C5A9D1F4A8E3700A647F8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				395C5A9E1F4A8E3700A647F8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		395C5AB71F4A8E3700A647F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		395C5AB81F4A8E3700A647F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		395C5ABA1F4A8E3700A647F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LUYMC6AG7V;
+				INFOPLIST_FILE = "优越指数部分/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "sayes.super.com.------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		395C5ABB1F4A8E3700A647F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LUYMC6AG7V;
+				INFOPLIST_FILE = "优越指数部分/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "sayes.super.com.------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		395C5ABD1F4A8E3700A647F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = LUYMC6AG7V;
+				INFOPLIST_FILE = "优越指数部分Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "sayes.super.com.------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/优越指数部分.app/优越指数部分";
+			};
+			name = Debug;
+		};
+		395C5ABE1F4A8E3700A647F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = LUYMC6AG7V;
+				INFOPLIST_FILE = "优越指数部分Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "sayes.super.com.------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/优越指数部分.app/优越指数部分";
+			};
+			name = Release;
+		};
+		395C5AC01F4A8E3700A647F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = LUYMC6AG7V;
+				INFOPLIST_FILE = "优越指数部分UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "sayes.super.com.------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "优越指数部分";
+			};
+			name = Debug;
+		};
+		395C5AC11F4A8E3700A647F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = LUYMC6AG7V;
+				INFOPLIST_FILE = "优越指数部分UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "sayes.super.com.------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "优越指数部分";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		395C5A871F4A8E3600A647F8 /* Build configuration list for PBXProject "优越指数部分" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				395C5AB71F4A8E3700A647F8 /* Debug */,
+				395C5AB81F4A8E3700A647F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		395C5AB91F4A8E3700A647F8 /* Build configuration list for PBXNativeTarget "优越指数部分" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				395C5ABA1F4A8E3700A647F8 /* Debug */,
+				395C5ABB1F4A8E3700A647F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		395C5ABC1F4A8E3700A647F8 /* Build configuration list for PBXNativeTarget "优越指数部分Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				395C5ABD1F4A8E3700A647F8 /* Debug */,
+				395C5ABE1F4A8E3700A647F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		395C5ABF1F4A8E3700A647F8 /* Build configuration list for PBXNativeTarget "优越指数部分UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				395C5AC01F4A8E3700A647F8 /* Debug */,
+				395C5AC11F4A8E3700A647F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 395C5A841F4A8E3600A647F8 /* Project object */;
+}
